@@ -5,10 +5,20 @@ Hello there, human!
 
 Sorcerer is also intended for someone trying to create ALVA technical theatre designs. ALVA stands for Animated Lighting, Video, and Audio. Currently, Sorcerer is capable of animating stage lights and 3D audio objects at the same time. This means you can make a mover track a 3D audio object moving through the house. It also means Sorcerer can connect you to the animation powerhouse that is Blender, allowing you to create extremely sophisticated lighting animations—through existing lighting consoles you already have. Once a design is perfect, it can be saved onto the lighting console as a “qmeo” to be played back almost like a video, without Sorcerer.
 
+Alva Sorcerer Documentation Objectives:
+===================================
+The Alva Sorcerer documentation will seek to provide you with guidance on how utilize Sorcerer to:
 
-.. note::
+•	Create libraries of hundreds of pages of “ML editor” layouts
+•	Make a moving light track a 3D audio object moving through the house
+•	Make it look like a gargantuan cube is rotating in the air above the stage
+•	Rapidly patch Eos using only a 3D model
+•	Use strips in sequencer to define flashes, macros, cues, offsets, and “qmeos”
+•	Use Blender to create and then record absurdly complex lighting animations
+•	How to imbue a moving light with human-like movement using performance capture
+•	Disable access to settings during student or volunteer use 
+•	Take many of these skills to other consoles like grandMA, Hog, or MagicQ
 
-   This project is under active development.
 
 Contents
 --------
