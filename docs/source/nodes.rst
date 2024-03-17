@@ -5,7 +5,3 @@ Sorcerer introduces the concept of node-based light design, where the word “se
 A reason other consoles/software cannot work this way is because their UIs are not efficient and customizable enough. Providing the user with multiple ML editors, one for each group, would quickly clutter the workspace to the point of chaos. Sorcerer solves this problem by using a node editor to organize controllers. Nodes can be renamed, panned, resized, colored, and collapsed into groups (and other groups can be collapsed inside those groups). The user can create hierarchies of controllers consisting of drivers and masters, where drivers control multiple groups and masters control drivers. The user can pan around and zoom in and out of the workspace. It starts as a completely empty canvass. The user can add as many or as few nodes as desired. Each workspace can easily be duplicated to form libraries of layouts. Node groups can be marked as assets and sold on existing marketplaces. 
 
 The Sorcerer UI components were designed using only a 13” laptop screen.
-
-How to find the Node Editor and create some group controllers:
----------------------------------------------------------------
-
