@@ -9,20 +9,6 @@ Alva Sorcerer Documentation Objectives:
 ----------------------------------------
 The Alva Sorcerer documentation will seek to provide you with guidance on how utilize Sorcerer to:
 
-•	Create libraries of hundreds of pages of “ML editor” layouts
-•	Make a moving light track a 3D audio object moving through the house
-•	Make it look like a gargantuan cube is rotating in the air above the stage
-•	Rapidly patch Eos using only a 3D model
-•	Use strips in sequencer to define flashes, macros, cues, offsets, and “qmeos”
-•	Use Blender to create and then record absurdly complex lighting animations
-•	How to imbue a moving light with human-like movement using performance capture
-•	Disable access to settings during student or volunteer use 
-•	Take many of these skills to other consoles like grandMA, Hog, or MagicQ
-
-
-Contents
---------
-
 .. toctree::
 
    nodes
