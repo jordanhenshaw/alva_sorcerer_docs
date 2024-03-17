@@ -26,4 +26,5 @@ Contents
 .. toctree::
 
    nodes
+   audio
    api
