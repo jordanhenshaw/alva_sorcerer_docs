@@ -83,7 +83,7 @@ R: Right. Bump selected strips to the right one frame. Hold Shift to multiply by
 U: Up. Bump selected strips up one channel. Hold Shift to go down instead.
 
 
-All of these settings put together is called a keymap. The entire keymap can be thoroughly customized in Blender’s Preferences, even those for Sorcerer buttons. Let’s everybody thank the Blender devs.
+All of these settings put together is called a keymap. The entire keymap can be thoroughly customized in Blender’s Preferences, even those for Sorcerer buttons. Let’s everybody thank the Blender devs for this wonderful gift.
 
 
 House Lights Automation:
@@ -101,4 +101,5 @@ It is interesting to note here that this is not a problem when creating sequence
 
 
 Motif Names and Linking:
+----------------------------
 Motif names, the text field at the top of the Strip Media popup, is how you link similar nodes together so they stay in sync. To keep a group of strips in sync, use the Formatter and Copy to Selected button to make sure they all have the exact same Motif Name. Then make sure they all have their chain icon red and looking like a chain. This icon/button is to the right of the strip type buttons, so to the right of Trigger (or Animation if Trigger is turned off). Note: This does not keep all settings in sync.
