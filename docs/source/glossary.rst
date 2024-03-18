@@ -26,4 +26,9 @@ Noticeably absent from this list is the term “lighting pro****mer”. Pro****m
 
 **Alva Theaters core mission:** "*To build magical machines to make people happy.*"
 
+.. figure:: ../source/_static/flash_node_setup.png
+   :align: center
+   :alt: Group Controller Node
+   :width: 700px
+
 
