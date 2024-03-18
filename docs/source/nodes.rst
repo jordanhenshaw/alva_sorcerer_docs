@@ -64,7 +64,7 @@ These nodes are responsible for exporting animation data created by the node edi
 
 All parameters accessed in the node editor (except color, for the time being), can be animated at any time for any reason. This means you can import music, scrub to any point in the music, bind any parameter to any value, scrub to another point and immediately bind the parameter to a different value with a keyfame, use graph editor and dope sheet to acutely finesse the shape of the interpolation curve, and also use the dope sheet to duplicate and shift these curves around, and then expect Blender/Sorcerer to remember this and also be able to then automatically store it onto the console’s hard drive—without wires. All this can be achieved with Sorcerer without the need to first create an animation strip and then select the group to be controlled. Instead, you can immediately keyframe any parameter at any time always (except color, for the time being). Remarkably, this is not achieved with alternative DMX software, but with a remote-control software compatible with theoretically any professional lighting console, particularly including ETC Eos. 
 
-Because the node editor’s version of the Qmeo maker relies exclusively on user-defined OSC templates, it is (likely) compatible with at least most professional lighting consoles, and certainly with ETC Eos. 
+Because the node editor’s version of the qmeo maker relies exclusively on user-defined OSC templates, it is (likely) compatible with at least most professional lighting consoles, and certainly with ETC Eos. 
 
 Note: The algorithm that the Renderer Nodes use is significantly more advanced and quick than the much older algorithm the animation strips use over in sequencer. For example, the node editor version only requires one single pass compared to sequencer’s two. 
 
@@ -85,7 +85,7 @@ Pan/Tilt nodes:
 -----------------------------------------
 Use these nodes only for controlling the pan/tilt of conventionally hung, FOH movers. They are specifically designed only for this purpose. Using them for movers hung in other orientations will likely lead to less-than-intuitive results. 
 
-Why are they color pickers? Because Blender’s Python API provides color pickers to addon developers. Another reason is that mover spin, spinning is circles, so using a circle to control pan/tilt seems more intuitive than using a square.
+Why are they color pickers? Because Blender’s Python API provides color pickers to addon developers. Another reason is that movers spin, spinning is circles, so using a circle to control pan/tilt seems more intuitive than using a square.
 
 When these nodes are used for the proper movers, the interface could not possibly be more intuitive. If a mover is hung very deep into the house, hold down Shift while moving the dot. Be sure to release the mouse **before** releasing Shift, or it will jump away. 
 
