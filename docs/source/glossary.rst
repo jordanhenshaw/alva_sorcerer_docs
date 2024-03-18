@@ -14,23 +14,15 @@ Noticeably absent from this list is the term “lighting pro****mer”. Pro****m
 
 **Motor Node:** A feature not yet introduced to Sorcerer. This node will serve as a sort of oscillator for a node-based effects engine that should be released by EOD.
 
-
-
 **EOD:** At Alva Theaters, “EOD” means End of December.
 
-**Alva Theaters defines the following four software reliability ratings to describe its software products.**
+**Experimental-rated software:** “It should work.”
 
-**Experimental-rated (E):** “It should work.”
+**Design-rated software:** “We know it works under normal circumstances.” All publicly available Alva software is Design-rated according to Alva Theaters.
 
-**Design-rated (D):** “We know it works under normal circumstances.”
+**Performance-rated software:** “If you rely on this software during a live show and it fails you, it’s our fault.”
 
-**Performance-rated:** “If you rely on this software during a live show and it fails you, it’s our fault.”
-
-**Safety-rated (S):** “The software is reliable and safe enough to directly control systems that can physically hurt humans under predictable circumstances that are not otherwise regulated by the government.”
-
-**All publicly available Alva software is Design-rated according to Alva Theaters.**
-
-
+**Safety-rated software:** “The software is reliable and safe enough to directly control systems that can physically hurt humans under predictable circumstances that are not otherwise regulated by the government.”
 
 **Alva Theaters core mission:** "*To build magical machines to make people happy.*"
 
