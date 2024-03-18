@@ -6,6 +6,11 @@ A reason other consoles/software cannot work this way is because their UIs are n
 
 The Sorcerer UI components were designed using only a 13” laptop screen.
 
+.. figure:: ../source/_static/main_nodes_demo.png
+   :align: center
+   :alt: Example of possible node layout for basic cue building
+   :width: 700px
+
 
 Group controller nodes
 ---------------------------------
