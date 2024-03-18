@@ -5,6 +5,8 @@
 project = 'Sorcerer'
 copyright = '2024, Alva Theaters'
 author = 'Alva Theaters'
+html_logo = '_static/alva_orb.png'
+
 
 release = '0.1'
 version = '0.1.0'
