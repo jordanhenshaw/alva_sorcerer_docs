@@ -5,7 +5,7 @@
 project = 'Alva Sorcerer'
 copyright = '2024, Alva Theaters'
 author = 'Alva Theaters'
-html_logo = '_static/alva_orb.png'
+html_logo = '_static/sorcerer_logo.png'
 
 
 release = '0.1'
