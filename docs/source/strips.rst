@@ -97,7 +97,7 @@ This is the Audio Formatter popup, specific to audio (or video) strip selections
 
 This is the Audio Media popup, specific to audio strip selections. Use this to tell Sorcerer what timecode clock and event list to use for the event list and timecode clock management "Render Strips" button and play/scrub/stop synchronizer. Then, if desired, automate the creation of the cues and macros you'll need to start and stop the timecode clocks from the Eos console, since that process can be difficult to learn and remember. Note: The cues you use here must already exist on the console or the console will get upset. 
 
-.. figure:: ../source/_static/audio_media.png
+.. figure:: ../source/_static/better_audio_media.png
    :align: center
    :alt: Audio Media
    :width: 300px
@@ -105,6 +105,12 @@ This is the Audio Media popup, specific to audio strip selections. Use this to t
 
 Toolbar tab
 -----------------
+
+.. figure:: ../source/_static/sequencer_toolbar.png
+   :align: center
+   :alt: Sequencer Toolbar
+   :width: 100px
+
 On the left, expand the toolbar tab for quick buttons. Consult the tooltips for details on each button. These currently only work for Eos. 
 
 
@@ -166,4 +172,10 @@ It is interesting to note here that this is not a problem when creating sequence
 
 Motif names and linking
 ----------------------------
+
+.. figure:: ../source/_static/motif_name_linking.png
+   :align: center
+   :alt: Motif Name Linking
+   :width: 300px
+
 Motif names, the text field at the top of the Strip Media popup, is how you link similar nodes together so they stay in sync. To keep a group of strips in sync, use the Formatter and Copy to Selected button to make sure they all have the exact same Motif Name. Then make sure they all have their chain icon red and looking like a chain. This icon/button is to the right of the strip type buttons, so to the right of Trigger (or Animation if Trigger is turned off). Note: This does not keep all settings in sync.
