@@ -19,6 +19,8 @@ A primary point of differentiation between Sorcerer, which is remote control sof
 
 Because many parameter templates do not vary from fixture to fixture (intensity and iris for example), these templates are not found in the individual group controllers, but rather in the scene-level node editor and channel controller settings. Parameters that will require different templates for different fixture types (strobe for example) have their OSC templates stored on the individual nodes, accessed through the icon buttons. Other parameters, like zoom, also provide the user the ability to set min/max at the controller level. For the channel controller in 3D view, min/max is set across the scene universally. Min/max does not directly impact the numbers seen on sliders; rather, they impact how the slider value is mapped before being sent to the console. Many slider values only operate between 0 and 100, but the min/max allows the user to map the 0-100 scale to a custom background range. This is different from min/max in the sequencer’s animation strips, which do allow the user to directly manipulate the min/max seen on the slider itself. This change was made partly to minimize the quantity of buttons on the more compact node layouts.
 
+All of the following node types can be accessed from Shift + A, the Add menu at the top, or by right-clicking. While Sorcerer does offer a customized node editor area where only Sorcerer nodes can be added (to exclude irrelevant modelling/shading/compositing nodes), group nodes are not compatible in that space. If you are not planning to use group nodes, the Sorcerer Nodes view may be best.
+
 
 Group driver nodes
 ----------------------------------------
@@ -34,6 +36,10 @@ These nodes are like group driver nodes, but drive the driver nodes, not group c
 Master nodes are primarily intended to be used to remotely access collapsed group driver nodes hidden away inside group nodes. 
 
 Group nodes is a group of nodes that can act as a completely different world. You create groups with the right click menu. (Note: this only works in the Shader Editor, not in the Sorcerer Nodes view.) Once you have created a node group, Blender automatically tabs you into the node group’s world. You can use the two green nodes on the right and left hand side to connect to white sockets within the group node world. (Note: Currently, only connect to the white sockets, not sockets of any other color.) Once noodles have been drawn between the group input node sockets and white sockets on controllers you wish to control from the outside (you can label and reorder these on the N tab to the right, at the top), hit the tab key to exit the node group. Then, connect Master Node outputs to the green node group node’s white sockets. Then, remote-control the hidden nodes with the Master Node.
+
+Flash nodes
+--------------------------------------
+
 
 
 Mixer nodes
