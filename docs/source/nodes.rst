@@ -9,6 +9,10 @@ The Sorcerer UI components were designed using only a 13” laptop screen.
 
 Group controller nodes
 ---------------------------------
+.. image:: ../_static/group_controller_node.png
+   :alt: Node
+   :align: center
+
 These nodes control a single group. Select the group to control in the top lefthand corner. They provide instantaneous access to the most common parameters. They are compact enough to have dozens of them on screen at once. Toggle the visibility of any parameter on any controller by hitting the F key to reach the format menu. There, you can also control the custom color. All nodes can be resized on the x axis, but not on the y axis. 
 
 Use these if you are tired of traditional-style ML Editors that can only control one thing at once, take up half the screen, and require you to scroll this way and that way to access basic functions that really should be right next to one another with pictural icons. The Sorcerer group controller nodes were designed to minimize LPCI (Lazy Pixel Count Index) at all reasonable costs. PLCI is a mathematical calculation that quantifies the precise number of pixels on screen at any given time that do not serve a purpose.  
