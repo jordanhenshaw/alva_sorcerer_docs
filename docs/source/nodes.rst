@@ -50,6 +50,20 @@ Group nodes is a group of nodes that can act as a completely different world. Yo
 Flash nodes
 --------------------------------------
 
+Here is an example of a potential flash node setup being used for lighting choreography. This type of setup allows you to rapidly change parameters inside increasingly complex sequences without getting confused by complicated computer lingo and spreadsheets. Use color coding, noodles, and visual organization to stay on track of what settings are where. Note: to make the noodles do the fancy arrow thing, hold down Shift, right click, and drag over multiple noodles. To move an anchor point, click and and hit G to grab.
+
+The details on how this all works can be found in the sequencer section that talks about flash strips.
+
+.. figure:: ../source/_static/flash_node_setup.png
+   :align: center
+   :alt: Flash Node Setup
+   :width: 700px
+
+Here is what it looks like when you "tab into" the green "group node":
+
+.. figure:: ../source/_static/flash_collapsed_group.png
+   :alt: Group Node for Flashes
+   :width: 700px
 
 
 Mixer nodes
