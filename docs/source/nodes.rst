@@ -103,6 +103,11 @@ These nodes provide instant access to the specified parameter of all group contr
 
 Renderer nodes (qmeo nodes)
 ------------------------------------------------
+.. figure:: ../source/_static/qmeo_node.png
+   :align: center
+   :alt: Qmeo Node
+   :width: 400px
+
 These nodes are responsible for exporting animation data created by the node editor in a format that the lighting console can store and play back locally. These are called qmeos. Qmeos are like videos, only each frame is a lighting cue instead of a picture. Time is preserved by binding every cue to the correct frame in an event list for a timecode clock. All this work is done automatically by the Sorcerer orb, through these renderer nodes. 
 
 All parameters accessed in the node editor (except color, for the time being), can be animated at any time for any reason. This means you can import music, scrub to any point in the music, bind any parameter to any value, scrub to another point and immediately bind the parameter to a different value with a keyfame, use graph editor and dope sheet to acutely finesse the shape of the interpolation curve, and also use the dope sheet to duplicate and shift these curves around, and then expect Blender/Sorcerer to remember this and also be able to then automatically store it onto the console’s hard drive—without wires. All this can be achieved with Sorcerer without the need to first create an animation strip and then select the group to be controlled. Instead, you can immediately keyframe any parameter at any time always (except color, for the time being). Remarkably, this is not achieved with alternative DMX software, but with a remote-control software compatible with theoretically any professional lighting console, particularly including ETC Eos. 
@@ -116,16 +121,31 @@ To use these nodes, simply follow the tooltips. The correct syntax for ETC Eos i
 
 Console buttons nodes
 ------------------------------------------------------------
+.. figure:: ../source/_static/console_buttons_node.png
+   :align: center
+   :alt: Console Buttons Node
+   :width: 400px
+
 If the Console Buttons node is so confusing that it requires reading the documentation, please write a complaint to thisisdumb@alvatheaters.com or submit a bug report. Yes, that would be considered a bug.
 
 
 Presets nodes:
 ------------------------------------------
+.. figure:: ../source/_static/presets_node.png
+   :align: center
+   :alt: Presets Node
+   :width: 400px
+
 Use these nodes to rapidly record and recall presets. Soon, we will fix the issue where the numbers no longer draw correctly past a certain zoom level. Use the index offset number to make the preset numbers start at a number other than 1. This is useful if you have multiple preset nodes at the same time or if you are only allowed to occupy certain ranges to share space with others. 
 
 
 Pan/Tilt nodes:
 -----------------------------------------
+.. figure:: ../source/_static/pan_tilt_normal.png
+   :align: center
+   :alt: Pan Tilt Normal
+   :width: 200px
+
 Use these nodes only for controlling the pan/tilt of conventionally hung, FOH movers. They are specifically designed only for this purpose. Using them for movers hung in other orientations will likely lead to less-than-intuitive results. 
 
 Why are they color pickers? Because Blender’s Python API provides color pickers to addon developers. Another reason is that movers spin, spinning is circles, so using a circle to control pan/tilt seems more intuitive than using a square.
@@ -133,6 +153,18 @@ Why are they color pickers? Because Blender’s Python API provides color picker
 When these nodes are used for the proper movers, the interface could not possibly be more intuitive. If a mover is hung very deep into the house, hold down Shift while moving the dot. Be sure to release the mouse **before** releasing Shift, or it will jump away. 
 
 These nodes incorporate a system that allows the circular color picker to represent the additional range of pan rotation most moving lights provide that pass 180 degrees in each direction. This means that when you pan the mover from the front to all the way in the back, the gimbal can usually continue rotating. A normal color picker controller would face a serious problem here since a circle cannot represent more than a circle. (The ideal shape here would be more of a helical disk with 150% the surface area of a circle of the same scale.) Sorcerer solves this problem by activating a sort of “overdrive” mode whenever it detects that the user wants to pan either direction more than 180 degrees. This overdrive remaps the color picker so that it can represent the true rotational range of the gimbal (it is hardcoded to 270 degrees, so an extra 90 degrees both directions). The Pan/Tilt node will display a red message below the color picker to indicate that this mode has been entered. When the dot gets close enough to 270 or -270 degrees, the pan-around point, the node will add a second message under the original notification stating that the fixture will soon pan-around (due to the mechanical limitation of the gimbal). After pan-around has been reached, the “overdrive” mode is exited and the messages clear. 
+
+Overdrive mode has been entered:
+.. figure:: ../source/_static/pan_tilt_overdrive.png
+   :align: center
+   :alt: Overdrive Mode
+   :width: 200px
+
+Will soon pan-around warning:
+.. figure:: ../source/_static/pan_tilt_will_panaround.png
+   :align: center
+   :alt: Will Pan-around
+   :width: 400px
 
 The vertical slider on the right of these nodes controls scale or sensitivity. Raising it all the way up will have no effect on behavior and lowering it will make control inputs have less effect and it will be easier to fine-tune the position.
 
