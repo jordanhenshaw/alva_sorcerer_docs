@@ -68,10 +68,14 @@ Animation strips
 
 Use animation strips to make people feel sorry for lighting fixtures. Use them to make it seem like individual movers have feelings. Bring stage lights to life for your audience. Achieve this with Blender’s performance capture technology, linked to the stage by Sorcerer. If you aren’t satisfied with a predefined, linear fade curve from the lighting console, spends hours finessing the fine details of a single curve in the graph editor. If you have a series of multiple lighting animations, consider using the Nonlinear Animation Editor to better organize them. To rapidly reproduce and drag keyframes, find them on the timeline view. Once you have a complete animation sequence, create a qmeo so that console can play it back by itself (without Sorcerer).
 
+Note: we realize this doesn't actually help much. When we have the time, we will make this section much more helpful. It's difficult to explain some of the more advanced features in writing.
+
   
 How to do performance capture
 -------------------------------
 Film a video of yourself pointing a laser pointer around a flat vertical surface in an expressive way, perhaps to music like Hans Zimmer’s “S.T.A.Y.”. Pretend like you are a living, breathing moving light that has feelings. Put those feelings into the movement of the laser pointer. Then, load the footage into Blender’s motion tracking area. Then, use common Blender tutorials to help you track the laser pointer light to an “empty”. Then, use an animation strip to constrain a mover to the “empty”. Finally, once it seems right, use the animation strip to create a qmeo so the console can remember how to play it back without Sorcerer. 
+
+Note: we realize this doesn't help much. When we have the time, we will make this section much more helpful. It's difficult to explain some of the more advanced features in writing.
 
 
 Strip formatter
