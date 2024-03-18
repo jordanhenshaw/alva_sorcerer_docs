@@ -7,7 +7,7 @@ A reason other consoles/software cannot work this way is because their UIs are n
 The Sorcerer UI components were designed using only a 13” laptop screen.
 
 .. figure:: ../source/_static/main_nodes_demo.png
-   :align: left
+   :align: center
    :alt: Example of possible node layout for basic cue building
    :width: 700px
 
@@ -15,7 +15,7 @@ The Sorcerer UI components were designed using only a 13” laptop screen.
 Group controller nodes
 ---------------------------------
 .. figure:: ../source/_static/group_controller_node.png
-   :align: left
+   :align: center
    :alt: Group Controller Node
    :width: 400px
 
@@ -55,7 +55,7 @@ Here is an example of a potential flash node setup being used for lighting chore
 The details on how this all works can be found in the sequencer section that talks about flash strips.
 
 .. figure:: ../source/_static/flash_node_setup.png
-   :align: left
+   :align: center
    :alt: Flash Node Setup
    :width: 700px
 
@@ -84,7 +84,7 @@ These nodes work exactly the same way group driver nodes do, only they do not cu
 Group data system
 -----------------------------------------------
 .. figure:: ../source/_static/group_data.png
-   :align: left
+   :align: center
    :alt: Group Data Area
    :width: 500px
 A problem you may encounter when you first start is zero groups are available in the top left corner of the mixer and group controller nodes. To add groups to the scene’s group data, either navigate to Blender’s properties viewer, put it in full screen, navigate to World, and then find the “SORCERER: Group channel blocks (full screen)” section. Here, you can manually add and modify groups with their channels. Groups you create here will then be accessible from the group controller/mixer top left group target drop down. 
@@ -95,7 +95,7 @@ Another way to create these groups is the USITT ASCII import system, accessible 
 Single-parameter nodes
 -----------------------------------------------
 .. figure:: ../source/_static/singles_nodes.png
-   :align: left
+   :align: center
    :alt: Singles Nodes
    :width: 500px
 These nodes provide instant access to the specified parameter of all group controller nodes at the top level in one compact place. They do not include the parameters of nodes hidden inside group nodes, and they don’t yet limit their scope when they themselves are inside a group node.
