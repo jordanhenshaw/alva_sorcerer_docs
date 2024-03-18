@@ -1,4 +1,4 @@
-.. figure:: ../source/_static/alva_orb.png
+.. figure:: ../source/_static/sorcerer_logo.png
    :align: center
    :alt: Sorcerer
    :width: 100px
