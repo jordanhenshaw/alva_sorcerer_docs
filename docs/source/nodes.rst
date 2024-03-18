@@ -166,7 +166,7 @@ Will soon pan-around warning:
 .. figure:: ../source/_static/pan_tilt_will_panaround.png
    :align: center
    :alt: Will Pan-around
-   :width: 400px
+   :width: 200px
 
 The vertical slider on the right of these nodes controls scale or sensitivity. Raising it all the way up will have no effect on behavior and lowering it will make control inputs have less effect and it will be easier to fine-tune the position.
 
