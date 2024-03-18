@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Alva Sorcerer'
+project = 'Alva Sorcerer Manual'
 copyright = '2024, Alva Theaters'
 author = 'Alva Theaters'
 html_logo = '_static/sorcerer_logo.png'
