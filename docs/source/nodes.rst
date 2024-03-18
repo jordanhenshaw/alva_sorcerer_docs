@@ -1,4 +1,4 @@
-Instantaneously control dozens or hundreds of parameters without selections
+Make Any Group of Lights Do Anything Without Selecting It
 ====================================================================
 Sorcerer introduces the concept of node-based light design, where the word “selection” is a thing of the past. Sorcerer allows a lighting artist, lighting animator, or lighting choreographer to manipulate a lighting rig as if it were a painting or sculpture. To change a parameter, just change it. There is no need to make a selection first. 
 
