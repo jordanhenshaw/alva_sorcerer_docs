@@ -61,6 +61,7 @@ The details on how this all works can be found in the sequencer section that tal
 
 
 Here is what it looks like when you "tab into" the green "group node":
+
 .. figure:: ../source/_static/flash_collapsed_group.png
    :alt: Group Node for Flashes
    :width: 700px
