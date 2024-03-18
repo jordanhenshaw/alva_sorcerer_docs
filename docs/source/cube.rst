@@ -1,4 +1,4 @@
-Make 3D Shapes Influence Lights
+Make 3D shapes influence lights
 ============================================
 With Sorcerer, you have access to *dynamic spatial selections*, or “influencers”.  You can use a cube (or other simple 3D shapes) to make dynamic selections that change over time throughout a sequence. The cube has its own lighting parameters. When the cube passes over lights in 3D view, the lights inherit the cube’s parameters. When the light is no longer within the cube, the light is released back to its background state. 
 
