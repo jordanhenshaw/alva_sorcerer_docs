@@ -1,6 +1,6 @@
 Never select a group of lights again, with nodes!
 ====================================================================
-To change a parameter, just change it. You don't have to make a selection first. If you want to make that group red, just poke its color wheel. It won't mind. There are all sorts of things you can do by poking. You can make gobos spin, you can you can mix colors, you can do fans. Your mouse is your paint brush. You only need one stroke.
+To change a parameter, just change it. You don't have to make a selection first. If you want to make that group red, just poke its color wheel. It won't mind. There are all sorts of things you can do by poking. You can make gobos spin, you can mix colors, you can do fans. Your mouse is your paint brush. You only need one stroke.
 
 If you have music, you can tell any of the pokey things to be anywhere at any time, just tap "I". If you want to spend an hour fine-tuning a curve, that's okay, the graph editor can be your new personal playground. If you want use a laser pointer and perform a dance with your hand, that's okay too, you can bring that in with motion tracking and the moving light can follow along.
 
