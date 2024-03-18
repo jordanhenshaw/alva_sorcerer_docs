@@ -1,7 +1,7 @@
 .. figure:: ../source/_static/sorcerer_logo.png
    :align: center
    :alt: Sorcerer
-   :width: 100px
+   :width: 300px
 
 Hello there, human!
 ===================================
