@@ -10,7 +10,7 @@ Glossary
 
 Noticeably absent from this list is the term “lighting pro****mer”. Pro****ming is what *we* do here at Alva Theaters. Leave that to *us*, the software developers. Stage lighting should be thought of as *art*, **NEVER** as "pro****ming".
 
-**“Performance Capture” vs “Mo***n Capture”:** Technically, what Sorcerer does is called “mo***n capture” since it barely captures a single armature, if that. However, the term “performance capture” reflects the broader artistic intent of capturing emotive expression far more accurately, so here it is called performance capture. 
+**“Performance Capture” vs “Mo***n Capture”:** Technically, what Blender/Sorcerer does is called “mo***n capture” since it barely captures a single armature, if that. However, the term “performance capture” reflects the broader artistic intent of capturing emotive expression far more accurately, so here it is called performance capture. 
 
 **Motor Node:** A feature not yet introduced to Sorcerer. This node will serve as a sort of oscillator for a node-based effects engine that should be released by EOD.
 
