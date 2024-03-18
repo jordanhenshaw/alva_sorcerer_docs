@@ -29,6 +29,6 @@ Noticeably absent from this list is the term “lighting pro****mer”. Pro****m
 .. figure:: ../source/_static/alva_theaters_transparent.png
    :align: center
    :alt: Mission
-   :width: 300px
+   :width: 200px
 
 
