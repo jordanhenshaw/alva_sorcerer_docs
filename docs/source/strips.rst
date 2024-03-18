@@ -4,9 +4,19 @@ There are many DMX softwares out there that can do sequence-based light design. 
 
 All the “media” settings for the below strips can be accessed from a popup with the M key. They can also be accessed on the side N tab. 
 
+.. figure:: ../source/_static/advanced_sequencing.png
+   :align: center
+   :alt: Sequencing
+   :width: 700px
 
 Flash strips
 -----------------
+
+.. figure:: ../source/_static/flash_strips.png
+   :align: center
+   :alt: Flash strips
+   :width: 300px
+
 The sequencer provides 5 different strip types, as mentioned above. Flash strips allow the user to rapidly take a value up, then down, with minimal effort. The length of the effect is defined by strip length, which is a common theme. Changing a “bias” setting can make the beginning faster than the ending, or vice versa. Plain English is used to define these effects. A background algorithm attempts to guess what the user meant and displays the syntax it will actually send to the console for the user to review. This means typos and lazy shorthand is rewarded by the software. It is the software’s job to read the user’s mind. It’s for artists, not “pro****mers”.
 
 **How to connect flash nodes to flash strips:**
@@ -15,11 +25,23 @@ You may wish to connect flash nodes to flash strips if you have a complex choreo
 
 Macro strips
 ---------------------
+
+.. figure:: ../source/_static/macro_strips.png
+   :align: center
+   :alt: Macro Strips
+   :width: 300px
+
 Macro strips are similar to flash strips but allow the user to define explicit macros to be sent on the strip’s start and end frames. If desired, the user can add “*” to have Sorcerer automatically fill in “ Sneak Time [strip length] ”. These also try to correct typos, but this algorithm is more restricted since it is not aware of the full Eos macro vocabulary. (Future versions of Sorcerer may include an intellisense/autocompletion type of system here that would predict and display the next most likely word. Such systems are common in software development IDE’s. This feature however has not yet been built.) Creating single-line Eos macros with macro strips may be preferable to creating them through the Eos UI if a user simply wishes to spell out a known macro command with letters rather than trying to search for each individual word in a massive library of words. Oftentimes, it’s simpler to just spell it out. A common “gotcha” here is forgetting to add underscores (“_”) between the words of multi-word keys. Unlike flash strips, macro strips will not automatically add “Enter” at the end if it is forgotten since sometimes it is left out intentionally in this context. 
 
 
 Cue strips
 -----------------------
+
+.. figure:: ../source/_static/cue_strips.png
+   :align: center
+   :alt: Cue Strips
+   :width: 300px
+
 Cue strips allow the user to type in cue number in text format and use the strip length to define the cue duration. The user can then use a combination of the console itself, the node editor, and the cue builder feature built into cue strips to build and record the cue. The cue builder feature is there to provide rapid access to traditional, academic theatre lighting structure like rim light, key light, wash light, texture light, accent light, cyc light, and accent light. This feature is primarily intended for musical contexts. If a theatre setup uses zip strips and gels to light the cyclorama with colors, the software can switch to using 4 separate intensity sliders to mix cyc color. For lighting types likely to include color, like cyc, accent, band, and texture light, the user can rapidly record and recall presets identified by colors. For lighting types not likely to use color, rim light, key light, and wash light, numerical icons are provided instead of colored icons. However, they relate to presets just the same, which can still control all palettes to include color palettes. These are primarily intended for focus/beam information. 
 
 Change what rows control what groups by pressing the gear icon to the right of each row. This will open a popup where you type in the group number(s).
@@ -27,11 +49,23 @@ Change what rows control what groups by pressing the gear icon to the right of e
 
 Trigger strips
 -----------------------
+
+.. figure:: ../source/_static/trigger_strips.png
+   :align: center
+   :alt: Trigger Strips
+   :width: 300px
+
 Trigger strips allow the user to write out purely arbitrary OSC strings to be sent on the strip’s start and end frames. They also allow the user to create advanced offset effects using the “Add Offsets” text input field. Start by defining the first thing that should happen in the strip’s start frame field. For example, “Channel 1 at full enter”. Then, write out the channels that should be considered in the group of channels that should do stuff (Note: this technically works with lists of groups as well): “1-20”. When you play through the strip, channel 1 will come up to full, then 2, then 3, and by the end of the strip, all 20 channels will be at full. To add a fade up, simply add a “sneak time” to the start frame field. To make this happen in reverse order, simply reverse it. To add multiple lists, add things like “1-20, 30-20, 50-60”. All these channel lists will be added to the offset in sequential order. To make multiple lists fire at the same time, simply separate the lists with parenthesis (). This tool doesn’t only work with intensity. Many other similar requests will also work. However, it is possible to confuse the algorithm with complex inputs. Note: multiple lists inside parenthesis only works properly when the lists have the same quantity of channels.)
 
 
 Animation strips
 --------------------------
+
+.. figure:: ../source/_static/animation_strips.png
+   :align: center
+   :alt: Animation Strips
+   :width: 300px
+
 Use animation strips to make people feel sorry for lighting fixtures. Use them to make it seem like individual movers have feelings. Bring stage lights to life for your audience. Achieve this with Blender’s performance capture technology, linked to the stage by Sorcerer. If you aren’t satisfied with a predefined, linear fade curve from the lighting console, spends hours finessing the fine details of a single curve in the graph editor. If you have a series of multiple lighting animations, consider using the Nonlinear Animation Editor to better organize them. To rapidly reproduce and drag keyframes, find them on the timeline view. Once you have a complete animation sequence, create a qmeo so that console can play it back by itself (without Sorcerer).
 
   
@@ -42,7 +76,24 @@ Film a video of yourself pointing a laser pointer around a flat vertical surface
 
 Strip formatter
 --------------------
+
+.. figure:: ../source/_static/strip_formatter.png
+   :align: center
+   :alt: Strip Formatter
+   :width: 200px
+
 The strip formatter is available on the F key as a popup. Use it to rapidly format multiple strips. Consult the tooltips for details on the many buttons.
+
+
+Audio strips
+--------------------
+
+.. figure:: ../source/_static/audio_formatter.png
+   :align: center
+   :alt: Audio Formatter
+   :width: 200px
+
+This is the audio formatter, specific to audio (or video) strip selections. Use the Set Range and Zero Timecode buttons to rapidly set up the scene for the new song. There is also a tool there for rapidly adding many color coded strips on each beat of the song, based on time signature and BPM. Once you create an army of color-coded strips, select all strips of each beat by using the regular strip formatter. Set the magnet to filter for the length and color, then hit Select Magnetic with the filtering icon not red to select all those strips. (Yes, the whole "Select Magnetic" filtering thing is really confusing. We'll make it less dumb when we have time.)
 
 
 Toolbar tab
