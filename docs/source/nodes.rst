@@ -155,12 +155,14 @@ When these nodes are used for the proper movers, the interface could not possibl
 These nodes incorporate a system that allows the circular color picker to represent the additional range of pan rotation most moving lights provide that pass 180 degrees in each direction. This means that when you pan the mover from the front to all the way in the back, the gimbal can usually continue rotating. A normal color picker controller would face a serious problem here since a circle cannot represent more than a circle. (The ideal shape here would be more of a helical disk with 150% the surface area of a circle of the same scale.) Sorcerer solves this problem by activating a sort of “overdrive” mode whenever it detects that the user wants to pan either direction more than 180 degrees. This overdrive remaps the color picker so that it can represent the true rotational range of the gimbal (it is hardcoded to 270 degrees, so an extra 90 degrees both directions). The Pan/Tilt node will display a red message below the color picker to indicate that this mode has been entered. When the dot gets close enough to 270 or -270 degrees, the pan-around point, the node will add a second message under the original notification stating that the fixture will soon pan-around (due to the mechanical limitation of the gimbal). After pan-around has been reached, the “overdrive” mode is exited and the messages clear. 
 
 Overdrive mode has been entered:
+
 .. figure:: ../source/_static/pan_tilt_overdrive.png
    :align: center
    :alt: Overdrive Mode
    :width: 200px
 
 Will soon pan-around warning:
+
 .. figure:: ../source/_static/pan_tilt_will_panaround.png
    :align: center
    :alt: Will Pan-around
