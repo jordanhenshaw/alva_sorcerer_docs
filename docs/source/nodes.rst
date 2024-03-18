@@ -9,7 +9,7 @@ The Sorcerer UI components were designed using only a 13” laptop screen.
 
 Group controller nodes
 ---------------------------------
-.. figure:: ../_static/group_controller_node.png
+.. figure:: ../source/_static/group_controller_node.png
    :align: center
    :alt: Node
 
