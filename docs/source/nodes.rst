@@ -7,7 +7,7 @@ A reason other consoles/software cannot work this way is because their UIs are n
 The Sorcerer UI components were designed using only a 13” laptop screen.
 
 .. figure:: ../source/_static/main_nodes_demo.png
-   :align: center
+   :align: left
    :alt: Example of possible node layout for basic cue building
    :width: 700px
 
@@ -15,7 +15,7 @@ The Sorcerer UI components were designed using only a 13” laptop screen.
 Group controller nodes
 ---------------------------------
 .. figure:: ../source/_static/group_controller_node.png
-   :align: center
+   :align: left
    :alt: Group Controller Node
    :width: 400px
 
@@ -55,7 +55,7 @@ Here is an example of a potential flash node setup being used for lighting chore
 The details on how this all works can be found in the sequencer section that talks about flash strips.
 
 .. figure:: ../source/_static/flash_node_setup.png
-   :align: center
+   :align: left
    :alt: Flash Node Setup
    :width: 700px
 
@@ -70,7 +70,7 @@ Here is what it looks like when you "tab into" the green "group node":
 Mixer nodes
 ---------------------------------------
 .. figure:: ../source/_static/mixer_nodes.png
-   :align: center
+   :align: left
    :alt: Mixer Node
    :width: 400px
 These nodes can be used to mix two or three different parameter choices across a group. They can toggle between Intensity, Color, and Pan/Tilt. They can either fan the choices across the group, or when the middle selection is hidden, they can alternate two selections. This is particularly useful for adding 2 alternating colors to effect lights. The boring settings part of the mixer node can easily be hidden with the eye icon. To bring them back, bring up the format popup with the F key. To create a mixer that controls both intensity, color, and pan/tilt for a group, the settings can be toggled off and three different mixer node can be stacked in top of each other with minimal wasted space in between. A node will only change its layering if the node is fully selected. Simply changing a slider or color will not layer a bottom node to the top. Changing the underlying settings of the node, like parameter type or group target, will however, and you will need to click the bottom, then the middle, then the top to restore the correct layering.
@@ -83,6 +83,10 @@ These nodes work exactly the same way group driver nodes do, only they do not cu
 
 Group data system
 -----------------------------------------------
+.. figure:: ../source/_static/group_data.png
+   :align: left
+   :alt: Group Data Area
+   :width: 500px
 A problem you may encounter when you first start is zero groups are available in the top left corner of the mixer and group controller nodes. To add groups to the scene’s group data, either navigate to Blender’s properties viewer, put it in full screen, navigate to World, and then find the “SORCERER: Group channel blocks (full screen)” section. Here, you can manually add and modify groups with their channels. Groups you create here will then be accessible from the group controller/mixer top left group target drop down. 
 
 Another way to create these groups is the USITT ASCII import system, accessible in the Alva Sorcerer section of the N tab on the right of the node editor, as well as the Patch function beneath that. (The Patch function is only visible in Eos console mode, toggled in the node settings.) The USITT ASCII import system takes a USITT ASCII file created by some lighting consoles, including ETC Eos, and adds all the lights to the 3D scene (if location/orientation is provided in the file) and automatically creates all the group controller nodes in the node editor, placing them in positions on the node editor canvass roughly consistent with any available position data. The Patch function is discussed later.
@@ -90,6 +94,10 @@ Another way to create these groups is the USITT ASCII import system, accessible 
 
 Single-parameter nodes
 -----------------------------------------------
+.. figure:: ../source/_static/singles_nodes.png
+   :align: left
+   :alt: Singles Nodes
+   :width: 500px
 These nodes provide instant access to the specified parameter of all group controller nodes at the top level in one compact place. They do not include the parameters of nodes hidden inside group nodes, and they don’t yet limit their scope when they themselves are inside a group node.
 
 
