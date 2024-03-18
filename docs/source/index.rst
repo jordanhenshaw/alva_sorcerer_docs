@@ -1,3 +1,8 @@
+.. figure:: ../source/_static/alva_orb.png
+   :align: center
+   :alt: Sorcerer
+   :width: 100px
+
 Hello there, human!
 ===================================
 
