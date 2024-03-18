@@ -1,4 +1,4 @@
-Make 3D shapes influence lights
+Make moving 3D shapes influence lights
 ============================================
 
 .. figure:: ../source/_static/influencers.png
