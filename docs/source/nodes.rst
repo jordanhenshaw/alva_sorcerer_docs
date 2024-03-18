@@ -138,6 +138,8 @@ Presets nodes:
 
 Use these nodes to rapidly record and recall presets. Soon, we will fix the issue where the numbers no longer draw correctly past a certain zoom level. Use the index offset number to make the preset numbers start at a number other than 1. This is useful if you have multiple preset nodes at the same time or if you are only allowed to occupy certain ranges to share space with others. 
 
+Enter record mode by pressing the white dots to the left. Currently, record mode will activate simultaneously for all groups at once, indicated by the rows becoming highlighted in red. To record, simply press the buttons you wish to record. To exit record mode, simply press any white dot button again and the red highlighting will go away. The buttons will now act as recalls, not records.
+
 
 Pan/Tilt nodes:
 -----------------------------------------
