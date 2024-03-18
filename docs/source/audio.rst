@@ -1,6 +1,11 @@
 Make lights track 3D audio objects
 ============================================================================
 
+.. figure:: ../source/_static/3d_audio.png
+   :align: center
+   :alt: 3D Audio
+   :width: 700px
+
 A helicopter flies into the theater from the rear of the house. You hear it moving and you see lights pointing at it, tracking it. It moves from one side of the house to the other, then makes its way onto the stage. Then you hear and seem to see it drop down onto the stage. The lights and sounds always stayed in perfect sync with each other. 
 
 Without Sorcerer, creating that theatre magic would be prohibitively complex and simply impossible without a gargantuan time commitment. With Sorcerer, high schoolers can quickly program this after school (assuming the speakers are present). Simply use the sequencer audio panel and animation strips with motion paths to make a light track an “empty” over in 3D view.
