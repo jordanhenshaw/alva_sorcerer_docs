@@ -8,9 +8,9 @@ Glossary
 
 **Lighting Choreographer/Lighting Sculptor/Lighting Animator:** These are all terms used to describe simultaneous disciplines within the new theatrical light design field made possible by Blender and Sorcerer. A lighting choreographer uses the tools to make lights dance the same way groups of humans dance. With posing, rhythm, cadence, expression, and inertia, often with the aid of flash strips and flash nodes. A lighting sculptor is more of a slow-motion painter, working slightly less with time and more with the intricate details of specific cues with the aid of the node editor. The lighting animator instead focuses on imbuing specific lighting fixtures with humanlike movement that exudes emotions. They may work extensively with motion capture, the NLA editor, and the graph editor to force the audience to care about the feelings of specific fixtures. To the lighting animator, every lighting fixture can be made an actor with nearly the same emotive responsibilities as the human ones. Noticeably absent from this list is the term “lighting pro****mer”. Pro****ming is what we do here at Alva Theaters. Leave that to us, the software developers. Stage lighting should be thought of as art, NEVER as computer pro***ming.
 
-**“Performance Capture” vs “Mo***n Capture”: **Technically, what Sorcerer does is called “mo***n capture” since it barely captures a single armature, if that. However, the term “performance capture” reflects the broader artistic intent of capturing emotive expression far more accurately, so here it is called performance capture. 
+**“Performance Capture” vs “Mo***n Capture”:** Technically, what Sorcerer does is called “mo***n capture” since it barely captures a single armature, if that. However, the term “performance capture” reflects the broader artistic intent of capturing emotive expression far more accurately, so here it is called performance capture. 
 
 **Motor Node:** A feature not yet introduced to Sorcerer. This node will serve as a sort of oscillator for a node-based effects engine that should be released by EOD.
 
-**EOD: **At Alva Theaters, “EOD” means End of December.
+**EOD:** At Alva Theaters, “EOD” means End of December.
 
