@@ -1,4 +1,4 @@
-Track a 3D audio object with a moving light
+3D Audio with Lighting Control
 ============================================================================
 
 A helicopter flies into the theater from the rear of the house. You hear it moving and you see lights pointing at it, tracking it. It moves from one side of the house to the other, then makes its way onto the stage. Then you hear and seem to see it drop down onto the stage. The lights and sounds always stayed in perfect sync with each other. 
