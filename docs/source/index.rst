@@ -13,4 +13,9 @@ The Alva Sorcerer documentation will seek to provide you with guidance on how ut
 
    nodes
    audio
-   api
+   cube
+   patch
+   strips
+   school_mode
+   others
+   glossary
