@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Sorcerer'
+copyright = '2024, Alva Theaters'
+author = 'Alva Theaters'
 
 release = '0.1'
 version = '0.1.0'
