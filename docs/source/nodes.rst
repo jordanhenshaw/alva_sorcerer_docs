@@ -9,9 +9,9 @@ The Sorcerer UI components were designed using only a 13” laptop screen.
 
 Group controller nodes
 ---------------------------------
-.. image:: ../_static/group_controller_node.png
-   :alt: Node
+.. figure:: ../_static/group_controller_node.png
    :align: center
+   :alt: Node
 
 These nodes control a single group. Select the group to control in the top lefthand corner. They provide instantaneous access to the most common parameters. They are compact enough to have dozens of them on screen at once. Toggle the visibility of any parameter on any controller by hitting the F key to reach the format menu. There, you can also control the custom color. All nodes can be resized on the x axis, but not on the y axis. 
 
