@@ -1,4 +1,4 @@
-Never select a group of lights ever again, with nodes!
+Never select a group of lights again, with nodes!
 ====================================================================
 Sorcerer introduces the concept of node-based light design, where the word “selection” is a thing of the past. Sorcerer allows a lighting artist, lighting animator, or lighting choreographer to manipulate a lighting rig as if it were a painting or sculpture. To change a parameter, just change it. There is no need to make a selection first. 
 
@@ -7,7 +7,7 @@ A reason other consoles/software cannot work this way is because their UIs are n
 The Sorcerer UI components were designed using only a 13” laptop screen.
 
 
-Group Controller Nodes:
+Group controller nodes
 ---------------------------------
 These nodes control a single group. Select the group to control in the top lefthand corner. They provide instantaneous access to the most common parameters. They are compact enough to have dozens of them on screen at once. Toggle the visibility of any parameter on any controller by hitting the F key to reach the format menu. There, you can also control the custom color. All nodes can be resized on the x axis, but not on the y axis. 
 
@@ -20,14 +20,14 @@ A primary point of differentiation between Sorcerer, which is remote control sof
 Because many parameter templates do not vary from fixture to fixture (intensity and iris for example), these templates are not found in the individual group controllers, but rather in the scene-level node editor and channel controller settings. Parameters that will require different templates for different fixture types (strobe for example) have their OSC templates stored on the individual nodes, accessed through the icon buttons. Other parameters, like zoom, also provide the user the ability to set min/max at the controller level. For the channel controller in 3D view, min/max is set across the scene universally. Min/max does not directly impact the numbers seen on sliders; rather, they impact how the slider value is mapped before being sent to the console. Many slider values only operate between 0 and 100, but the min/max allows the user to map the 0-100 scale to a custom background range. This is different from min/max in the sequencer’s animation strips, which do allow the user to directly manipulate the min/max seen on the slider itself. This change was made partly to minimize the quantity of buttons on the more compact node layouts.
 
 
-Group Driver Nodes:
+Group driver nodes
 ----------------------------------------
 These nodes are like group controller nodes but are less compact. They control multiple group controller nodes at the same time. This allows the user to create elaborate hierarchies of nodes. A Group Driver node output socket, in the upper right-hand corner, can be connected to many group controller nodes. Operating the driver will operate all downstream group nodes the same way. A group controller’s input Driver Input node however can only connect to a single node upstream (this seems to be a Blender limitation). For this reason, multiple input sockets are provided at various points throughout the UI.
 
 These nodes, in addition to the mixer driver nodes, do not have group targets in the top left corner since their targets are defined instead by sockets and noodles.
 
 
-Master Nodes:
+Master nodes
 ----------------------------------
 These nodes are like group driver nodes, but drive the driver nodes, not group controller nodes. You should never attempt to connect a white Master Node socket to a socket of any color, like the pink Group Controller sockets and the purple Mixer Node sockets. It will connect, but the color of the noodle (the curvy line connecting sockets between nodes) will fade between the colors across its length. Within the context of Sorcerer nodes. seeing this color mixing effect on a noodle means there is an invalid connection. It may draw an error message. 
 
@@ -36,29 +36,29 @@ Master nodes are primarily intended to be used to remotely access collapsed grou
 Group nodes is a group of nodes that can act as a completely different world. You create groups with the right click menu (Note: this only works in the Shader Editor, not in the Sorcerer Nodes view). Once you have created a node group, Blender automatically tabs you into the node group’s world. You can use the two green nodes on the right and left hand side to connect to white sockets within the group node world. (Note: Currently, only connect to the white sockets, not sockets of any other color). Once noodles have been drawn between the group input node sockets and white sockets on controllers you wish to control from the outside (you can label and reorder these on the N tab to the right, at the top), hit the tab key to exit the node group. Then, connect Master Node outputs to the green node group node’s white sockets. Then, remote-control the hidden nodes with the Master Node.
 
 
-Mixer Nodes:
+Mixer nodes
 ---------------------------------------
 These nodes can be used to mix two or three different parameter choices across a group. They can toggle between Intensity, Color, and Pan/Tilt. They can either fan the choices across the group, or when the middle selection is hidden, they can alternate two selections. This is particularly useful for adding 2 alternating colors to effect lights. The boring settings part of the mixer node can easily be hidden with the eye icon. To bring them back, bring up the format popup with the F key. To create a mixer that controls both intensity, color, and pan/tilt for a group, the settings can be toggled off and three different mixer node can be stacked in top of each other with minimal wasted space in between. A node will only change its layering if the node is fully selected. Simply changing a slider or color will not layer a bottom node to the top. Changing the underlying settings of the node, like parameter type or group target, will however, and you will need to click the bottom, then the middle, then the top to restore the correct layering.
 
 
-Mixer Driver Nodes:
+Mixer driver nodes
 --------------------------------------------
 These nodes work exactly the same way group driver nodes do, only they do not currently have master input sockets, so they cannot be accessed remotely when collapsed inside a group node. These nodes, in addition to the group driver nodes, do not have group targets in the top left corner since their targets are defined instead by sockets and noodles. 
 
 
-Group Data System:
+Group data system
 -----------------------------------------------
 A problem you may encounter when you first start is zero groups are available in the top left corner of the mixer and group controller nodes. To add groups to the scene’s group data, either navigate to Blender’s properties viewer, put it in full screen, navigate to World, and then find the “SORCERER: Group channel blocks (full screen)” section. Here, you can manually add and modify groups with their channels. Groups you create here will then be accessible from the group controller/mixer top left group target drop down. 
 
 Another way to create these groups is the USITT ASCII import system, accessible in the Alva Sorcerer section of the N tab on the right of the node editor, as well as the Patch function beneath that. (The Patch function is only visible in Eos console mode, toggled in the node settings.) The USITT ASCII import system takes a USITT ASCII file created by some lighting consoles, including ETC Eos, and adds all the lights to the 3D scene (if location/orientation is provided in the file) and automatically creates all the group controller nodes in the node editor, placing them in positions on the node editor canvass roughly consistent with any available position data. The Patch function is discussed later.
 
 
-Single-parameter Nodes:
+Single-parameter nodes
 -----------------------------------------------
 These nodes provide instant access to the specified parameter of all group controller nodes at the top level in one compact place. They do not include the parameters of nodes hidden inside group nodes, and they don’t yet limit their scope when they themselves are inside a group node.
 
 
-Renderer Nodes (Qmeo Nodes):
+Renderer nodes (qmeo nodes)
 ------------------------------------------------
 These nodes are responsible for exporting animation data created by the node editor in a format that the lighting console can store and play back locally. These are called qmeos. Qmeos are like videos, only each frame is a lighting cue instead of a picture. Time is preserved by binding every cue to the correct frame in an event list for a timecode clock. All this work is done automatically by the Sorcerer orb, through these renderer nodes. 
 
@@ -71,17 +71,17 @@ Note: The algorithm that the Renderer Nodes use is significantly more advanced a
 To use these nodes, simply follow the tooltips. The correct syntax for ETC Eos is auto-filled by default. If using a different console, study the Eos syntax for an idea on what type of information is expected/needed. Research your console online to find its version of the syntax.
 
 
-Console Buttons Nodes:
+Console buttons nodes
 ------------------------------------------------------------
 If the Console Buttons node is so confusing that it requires reading the documentation, please write a complaint to thisisdumb@alvatheaters.com or submit a bug report. Yes, that would be considered a bug.
 
 
-Presets Nodes:
+Presets nodes:
 ------------------------------------------
 Use these nodes to rapidly record and recall presets. Soon, we will fix the issue where the numbers no longer draw correctly past a certain zoom level. Use the index offset number to make the preset numbers start at a number other than 1. This is useful if you have multiple preset nodes at the same time or if you are only allowed to occupy certain ranges to share space with others. 
 
 
-Pan/Tilt Nodes:
+Pan/Tilt nodes:
 -----------------------------------------
 Use these nodes only for controlling the pan/tilt of conventionally hung, FOH movers. They are specifically designed only for this purpose. Using them for movers hung in other orientations will likely lead to less-than-intuitive results. 
 
@@ -96,7 +96,7 @@ The vertical slider on the right of these nodes controls scale or sensitivity. R
 In the future, these nodes will include an enumerator (drop-down) to change between different hang modes, between upside down/right-side-up/side hung and facing either which way. Right now, the experience is perfect, but exclusively for the most common use-case.
 
 
-Toolbar Buttons (Node Editor):
+Toolbar buttons (node editor)
 -----------------------------------------------
 Most of these buttons currently only work ETC Eos. This should soon change to use templates defined in settings instead of the hardcoded messages.
 
