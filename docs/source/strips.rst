@@ -88,12 +88,19 @@ The strip formatter is available on the F key as a popup. Use it to rapidly form
 Audio strips
 --------------------
 
+This is the Audio Formatter popup, specific to audio (or video) strip selections. Use the Set Range and Zero Timecode buttons to rapidly set up the scene for the new song. There is also a tool there for rapidly adding many color coded strips on each beat of the song, based on time signature and BPM. Once you create an army of color-coded strips, select all strips of each beat by using the regular strip formatter. Set the magnet to filter for the length and color, then hit Select Magnetic with the filtering icon not red to select all those strips. (Yes, the whole "Select Magnetic" filtering thing is really confusing. We'll make it less dumb when we have time.)
+
 .. figure:: ../source/_static/audio_formatter.png
    :align: center
    :alt: Audio Formatter
    :width: 200px
 
-This is the audio formatter, specific to audio (or video) strip selections. Use the Set Range and Zero Timecode buttons to rapidly set up the scene for the new song. There is also a tool there for rapidly adding many color coded strips on each beat of the song, based on time signature and BPM. Once you create an army of color-coded strips, select all strips of each beat by using the regular strip formatter. Set the magnet to filter for the length and color, then hit Select Magnetic with the filtering icon not red to select all those strips. (Yes, the whole "Select Magnetic" filtering thing is really confusing. We'll make it less dumb when we have time.)
+This is the Audio Media popup, specific to audio strip selections. Use this to tell Sorcerer what timecode clock and event list to use for the event list and timecode clock management "Render Strips" button and play/scrub/stop synchronizer. Then, if desired, automate the creation of the cues and macros you'll need to start and stop the timecode clocks from the Eos console, since that process can be difficult to learn and remember. Note: The cues you use here must already exist on the console or the console will get upset. 
+
+.. figure:: ../source/_static/audio_media.png
+   :align: center
+   :alt: Audio Media
+   :width: 300px
 
 
 Toolbar tab
@@ -139,6 +146,12 @@ All of these settings put together is called a keymap. The entire keymap can be 
 
 House lights automation
 ----------------------------
+
+.. figure:: ../source/_static/house_lights.png
+   :align: center
+   :alt: House Lights Automation
+   :width: 300px
+
 Accessed in the settings for sequencer, this feature allows you to have Sorcerer automatically dim and raise the house lights when you start and stop playback. This works on any lighting console with OSC input. Just type in the command you wish to send to dim the lights on playback and then type in the command you wish to send to raise the lights on stop. 
 
 
