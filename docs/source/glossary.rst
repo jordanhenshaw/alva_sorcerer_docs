@@ -18,13 +18,13 @@ Noticeably absent from this list is the term “lighting pro****mer”. Pro****m
 
 **EOD:** At Alva Theaters, “EOD” means End of December.
 
-**Experimental-rated software:** “It should work.” Any software distributed by Alva Theaters labeled as "Beta" is Experimental-rated.
+**Experimental-rated software:** “It should work. But... if you try to rely on it for something super important and it doesn't work, don't yell at us, please. Trust us. We're telling you it might not work. But it should work.” Any software distributed by Alva Theaters labeled as "Beta" is Experimental-rated.
 
 **Design-rated software:** “We know it works under normal circumstances.” All publicly available Alva software is Design-rated according to Alva Theaters unless it is marked as "Beta".
 
-**Performance-rated software:** “If you rely on this software during a live show and it fails you, it’s our fault.”
+**Performance-rated software:** “If you rely on this software during a live show and it fails you, it’s our fault. You have permission from the universe to yell at us.” No Alva Theaters software is Performance-rated.
 
-**Safety-rated software:** “The software is reliable and safe enough to directly control systems that can physically hurt humans under predictable circumstances that are not otherwise regulated by the government.”
+**Safety-rated software:** “The software is reliable and safe enough to directly control systems that can physically hurt humans under predictable circumstances that are not otherwise regulated by the government.” No Alva Theaters software is Safety-rated.
 
 **Alva Theaters core mission:** "*To build magical machines to make people happy.*"
 
