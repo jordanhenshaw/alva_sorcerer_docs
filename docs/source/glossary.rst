@@ -1,4 +1,4 @@
-Glossary
+Interesting Glossary
 ===========
 **EMAR:** External Multi-disciplinary Animation Renderer. This is the software category that best describes Alva Sorcerer. It is external because unlike nearly all other comparable softwares, it cannot output DMX and instead remote-controls ETC Eos and other consoles. This is a category most occupied by TouchOSC. It is Multi-disciplinary because it provides access to robust tools for and seamless integration of lighting control and sound control. This is a category dominated by Qlab in the tech theatre context. It is Animation because its primary time-keeping tool is keyframes, not cues. This is a space somewhat occupied by Depence and somewhat by some other DMX software-only programs. It is a Renderer because it does not itself operate during a final performance; rather, it produces deliverables that dedicated FOH hardware executes. Alva Theaters hopes that the introduction of Sorcerer will lead to the development of other EMARs, and thereby, much better art all around.
 
@@ -24,7 +24,7 @@ Noticeably absent from this list is the term “lighting pro****mer”. Pro****m
 
 **Performance-rated software:** “*If you rely on this software during a live show and it fails you, it’s our fault. You have permission from the universe to yell at us.*” No Alva Theaters software is Performance-rated.
 
-**Safety-rated software:** “The software is reliable and safe enough to directly control systems that can physically hurt humans under predictable circumstances that are not otherwise regulated by the government.” No Alva Theaters software is Safety-rated.
+**Safety-rated software:** “*The software is reliable and safe enough to directly control systems that can physically hurt humans under predictable circumstances that are not otherwise regulated by the government.*” No Alva Theaters software is Safety-rated.
 
 **Alva Theaters core mission:** "*To build magical machines to make people happy.*"
 
