@@ -16,9 +16,9 @@ Noticeably absent from this list is the term “lighting pro****mer”. Pro****m
 
 **EOD:** At Alva Theaters, “EOD” means End of December.
 
-**Experimental-rated software:** “It should work.”
+**Experimental-rated software:** “It should work.” Any software distributed by Alva Theaters labeled as "Beta" is Experimental-rated.
 
-**Design-rated software:** “We know it works under normal circumstances.” All publicly available Alva software is Design-rated according to Alva Theaters.
+**Design-rated software:** “We know it works under normal circumstances.” All publicly available Alva software is Design-rated according to Alva Theaters unless it is marked as "Beta".
 
 **Performance-rated software:** “If you rely on this software during a live show and it fails you, it’s our fault.”
 
