@@ -21,7 +21,7 @@ Note: Currently, influencers can only influence intensity. Also, they cannot yet
 
 Channel controllers
 ------------------------------
-Select any light in 3D view (represented by cones) and hit "P" to open a popup controller to control its individual properties. This also works for influencers. You cannot yet select multiple cones and edit them at the same time. This is primarily intended for commandeering individual lights, not for making changes to multiple lights at a time (use nodes or strips to do that). 
+Select any light in 3D view (represented by cones) and hit "P" to open a popup controller to control its individual properties. This also works for influencers. You can select multiple cones and edit them at the same time, but only with the popup channel controller, not the side panel channel controller.
 
 Note: Blender's orientation widgets for the cones do not yet actually control pan and tilt on the console. Right now, the only way to constrain a lighting fixtures pan/tilt to an empty is by using an animation strip.
 
