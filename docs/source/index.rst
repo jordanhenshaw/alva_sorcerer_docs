@@ -26,3 +26,5 @@ This manual will focus on how to help you do more cool stuff. This documentation
    school_mode
    others
    glossary
+
+The expectation for this software is for it to be the very best product it can possibly be.
