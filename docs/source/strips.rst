@@ -135,35 +135,37 @@ On the left, expand the toolbar tab for quick buttons. Consult the tooltips for 
 
 Sequencer hotkeys
 ---------------------------
-G: Grab. Add X or Y after to constrain to X or Y axis. This is a Blender feature.
+**G, G + Y, G + X:** Grab. Add X or Y after to constrain to X or Y axis. This is a Blender feature.
 
-E: Extrude. Extrude a pattern of exactly 2 strips.
+**E:** Extrude. Extrude a pattern of exactly 2 strips.
 
-S: Scale. Resize the spacing of selected strips.
+**S:** Scale. Resize the spacing of selected strips.
 
-C: Channel. Then enter the number of the channel you wish to move selected strips to, then Enter. What you type will be drawn in the header by Arm Strips like in a normal command line.
+**C:** Channel. Then enter the number of the channel you wish to move selected strips to, then Enter. What you type will be drawn in the header by Arm Strips like in a normal command line.
 
-F: Format. Bring up the Strip Formatter popup.
+**F:** Format. Bring up the Strip Formatter popup.
 
-M: Media. Bring up the Strip Media popup.
+**M:** Media. Bring up the Strip Media popup.
 
-D: Deselect all.
+**D:** Deselect all.
 
-A: Select all. This is a Blender feature.
+**A:** Select all. This is a Blender feature.
 
-Spacebar: Play. This is a Blender feature. 
+**Spacebar:** Play. This is a Blender feature. 
 
-Shift + Spacebar: Render Strips. This presses the button that deletes then recreates the event list on the console according to the strips inside the sequencer.
+**Shift + Spacebar:** Render Strips. This presses the button that deletes then recreates the event list on the console according to the strips inside the sequencer.
 
-Ctrl + G: Ghost out. This presses the “Go_to_Cue Out Enter” on the console (Ghost button on toolbar.)
+**Ctrl + G:** Ghost out. This presses the “Go_to_Cue Out Enter” on the console (Ghost button on toolbar.)
 
-Q: Favorites. Right-click buttons to add to the Favorites menu. This is a Blender feature.
+**Q:** Favorites. Right-click buttons to add to the Favorites menu. This is a Blender feature.
 
-L: Left. Bump selected strips to the left one frame. Hold Shift to multiply by 5.
+**L, Shift + L:** Left. Bump selected strips to the left one frame. Hold Shift to multiply by 5.
 
-R: Right. Bump selected strips to the right one frame. Hold Shift to multiply by 5.
+**R, Shift + R:** Right. Bump selected strips to the right one frame. Hold Shift to multiply by 5.
 
-U: Up. Bump selected strips up one channel. Hold Shift to go down instead.
+**U, Shift + U:** Up, Down. Bump selected strips up one channel. Hold Shift to go down instead.
+
+**1-9, 0, Shift + 1-9:** Quickly select sequencer channels 1-9, 10, 11-19.
 
 
 All of these settings put together is called a keymap. The entire keymap can be thoroughly customized in Blender’s Preferences, even those for Sorcerer buttons. Let’s everybody thank the Blender devs for this wonderful gift.
