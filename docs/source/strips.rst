@@ -9,8 +9,8 @@ All the “media” settings for the below strips can be accessed from a popup w
    :alt: Sequencing
    :width: 700px
 
-Flash strips
------------------
+Flash strips (make stuff flash on-beat with minimal amount of effort)
+----------------------------------------------------------------------
 
 .. figure:: ../source/_static/flash_strips.png
    :align: center
@@ -19,12 +19,14 @@ Flash strips
 
 The sequencer provides 5 different strip types, as mentioned above. Flash strips allow the user to rapidly take a value up, then down, with minimal effort. The length of the effect is defined by strip length, which is a common theme. Changing a “bias” setting can make the beginning faster than the ending, or vice versa. Plain English is used to define these effects. A background algorithm attempts to guess what the user meant and displays the syntax it will actually send to the console for the user to review. This means typos and lazy shorthand is rewarded by the software. It is the software’s job to read the user’s mind. It’s for artists, not “pro****mers”.
 
+Make sure to use the O key to add these quickly, even during playback.
+
 **How to connect flash nodes to flash strips:**
 You may wish to connect flash nodes to flash strips if you have a complex choreography involving numerous steps, each with distinct parameter changes. While this can be achieved and maintained conventionally without any nodes, the nodes help you visually keep track of what is happening on every step and they provide you with means to instantly change any parameter on any step. To do it, connect a Flash output socket (yellow dots on the top right that say “Flash”) on a group controller, mixer, or driver node to a Flash input on the bottom left of a flash node. Flash Up means this controller should dictate what happens when the strip starts, Flash Down means this is what should become active when the strip starts going out. Then use the interface there to record presets on the console to store the preferences of the group controller/driver/mixer nodes plugged into that socket. Then, go to the sequencer and create a motif name on all the strips that should be associated with the node. “Motif name” is the name input at the field. Use the “linking” function as well as the “Copy to Selected” button, as well as the Strip Formatter (F key) to speed up this process and keep them linked together. Then, press the “Use nodes” button on the flash strip(s) to make it blue. Then, go back to the node editor and find that motif name in the drop down at the top of the flash node. Now, the flash strip read-only output (the text field above the input that reads out what it’s going to send to the console) should reflect the group and preset defined by the nodes. This way, it is far easier to maintain complex choreography routines without getting confused by needing to remember so many different numbers. Then, optionally collapse large flash node effects systems into group nodes and then tab in and out of them so they don’t create clutter when not being used.
 
 
-Macro strips
----------------------
+Macro strips (build and fire macros on the console via sequencer)
+-------------------------------------------------------------------
 
 .. figure:: ../source/_static/macro_strips.png
    :align: center
@@ -34,8 +36,8 @@ Macro strips
 Macro strips are similar to flash strips but allow the user to define explicit macros to be sent on the strip’s start and end frames. If desired, the user can add “*” to have Sorcerer automatically fill in “ Sneak Time [strip length] ”. These also try to correct typos, but this algorithm is more restricted since it is not aware of the full Eos macro vocabulary. (Future versions of Sorcerer may include an intellisense/autocompletion type of system here that would predict and display the next most likely word. Such systems are common in software development IDE’s. This feature however has not yet been built.) Creating single-line Eos macros with macro strips may be preferable to creating them through the Eos UI if a user simply wishes to spell out a known macro command with letters rather than trying to search for each individual word in a massive library of words. Oftentimes, it’s simpler to just spell it out. A common “gotcha” here is forgetting to add underscores (“_”) between the words of multi-word keys. Unlike flash strips, macro strips will not automatically add “Enter” at the end if it is forgotten since sometimes it is left out intentionally in this context. 
 
 
-Cue strips
------------------------
+Cue strips (design, record, and set duration of cues via sequencer)
+--------------------------------------------------------------------
 
 .. figure:: ../source/_static/cue_strips.png
    :align: center
@@ -47,8 +49,8 @@ Cue strips allow the user to type in cue number in text format and use the strip
 Change what rows control what groups by pressing the gear icon to the right of each row. This will open a popup where you type in the group number(s).
 
 
-Trigger strips
------------------------
+Trigger strips (send arbitrary OSC strings, or make cool offset effects)
+--------------------------------------------------------------------------
 
 .. figure:: ../source/_static/trigger_strips.png
    :align: center
@@ -58,8 +60,8 @@ Trigger strips
 Trigger strips allow the user to write out purely arbitrary OSC strings to be sent on the strip’s start and end frames. They also allow the user to create advanced offset effects using the “Add Offsets” text input field. Start by defining the first thing that should happen in the strip’s start frame field. For example, “Channel 1 at full enter”. Then, write out the channels that should be considered in the group of channels that should do stuff (Note: this technically works with lists of groups as well): “1-20”. When you play through the strip, channel 1 will come up to full, then 2, then 3, and by the end of the strip, all 20 channels will be at full. To add a fade up, simply add a “sneak time” to the start frame field. To make this happen in reverse order, simply reverse it. To add multiple lists, add things like “1-20, 30-20, 50-60”. All these channel lists will be added to the offset in sequential order. To make multiple lists fire at the same time, simply separate the lists with parenthesis (). This tool doesn’t only work with intensity. Many other similar requests will also work. However, it is possible to confuse the algorithm with complex inputs. Note: multiple lists inside parenthesis only works properly when the lists have the same quantity of channels.)
 
 
-Animation strips
---------------------------
+Animation strips (make fluid, natural, non-repeating, emotive lighting effects)
+------------------------------------------------------------------------------------------------
 
 .. figure:: ../source/_static/animation_strips.png
    :align: center
@@ -93,8 +95,8 @@ While we don't yet have a detailed, step by step tutorial for this, here are som
 
 
 
-Strip formatter
---------------------
+Strip formatter (quickly change a lot of strips at once)
+-----------------------------------------------------------
 
 .. figure:: ../source/_static/strip_formatter.png
    :align: center
@@ -104,8 +106,8 @@ Strip formatter
 The strip formatter is available on the F key as a popup. Use it to rapidly format multiple strips. Consult the tooltips for details on the many buttons.
 
 
-Audio strips
---------------------
+Audio strips (quickly make audio strips do stuff)
+----------------------------------------------------
 
 This is the Audio Formatter popup, specific to audio (or video) strip selections. Use the Set Range and Zero Timecode buttons to rapidly set up the scene for the new song. There is also a tool there for rapidly adding many color coded strips on each beat of the song, based on time signature and BPM. Once you create an army of color-coded strips, select all strips of each beat by using the regular strip formatter. Set the magnet to filter for the length and color, then hit Select Magnetic with the filtering icon not red to select all those strips. (Yes, the whole "Select Magnetic" filtering thing is really confusing. We'll make it less dumb when we have time.)
 
@@ -122,8 +124,8 @@ This is the Audio Media popup, specific to audio strip selections. Use this to t
    :width: 300px
 
 
-Toolbar tab
------------------
+Toolbar tab (quickly reach common console functions)
+-------------------------------------------------------
 
 .. figure:: ../source/_static/sequencer_toolbar.png
    :align: center
@@ -133,8 +135,8 @@ Toolbar tab
 On the left, expand the toolbar tab for quick buttons. Consult the tooltips for details on each button. These currently only work for Eos. 
 
 
-Sequencer hotkeys
----------------------------
+Sequencer hotkeys (do stuff subconsciously)
+-------------------------------------------------
 **G, G + Y, G + X:** Grab. Add X or Y after to constrain to X or Y axis. This is a Blender feature.
 
 **E:** Extrude. Extrude a pattern of exactly 2 strips.
@@ -171,8 +173,8 @@ Sequencer hotkeys
 All of these settings put together is called a keymap. The entire keymap can be thoroughly customized in Blender’s Preferences, even those for Sorcerer buttons. Let’s everybody thank the Blender devs for this wonderful gift.
 
 
-House lights automation
-----------------------------
+House lights automation (avoid getting yelled at for keeping house lights off)
+--------------------------------------------------------------------------------
 
 .. figure:: ../source/_static/house_lights.png
    :align: center
@@ -182,8 +184,8 @@ House lights automation
 Accessed in the settings for sequencer, this feature allows you to have Sorcerer automatically dim and raise the house lights when you start and stop playback. This works on any lighting console with OSC input. Just type in the command you wish to send to dim the lights on playback and then type in the command you wish to send to raise the lights on stop. 
 
 
-Livemap
---------------------
+Livemap (avoid having to constantly scrub backwards to activate current cue)
+-----------------------------------------------------------------------------
 When working with the sequencer, especially when fine-tuning specific sections and repeatedly playing over the same part, a common problem is getting the stage set to where it needs to be to properly view the pertinent effect/animation/cue. Oftentimes the console is in the wrong cue unless you scrub all the way back just to fire that cue so you can properly see what you’re working on. Sorcerer’s Livemap feature addresses this by automatically firing the closest cue left of the scrub bar on play. 
 
 It is interesting to note here that this is not a problem when creating sequences in the node editor. Another problem that vanishes when creating sequences in the node editor is the entire concept of “marking” movers in the dark to prevent lit moves. This is because the fundamental nature of keyframes makes it impossible for anything to not be in the correct position at the correct time. If a mover is keyframed to be in a specific position and dark to start going to a lit look, it is morally, ethically, spiritually, physically, positively, absolutely, undeniably and reliably bound to that position at that point in time. God himself could not change that. It would be absurd to be afraid that the mover might be in the focus palette from last cue and have to do a lit move if you didn’t mark it correctly. Keyframes make physically bind the mover to that position with ship anchors when you keyframe its start position. That’s what keyframes do. That’s why the entire concept of “marking” and the need for Livemap instantly vanishes when creating node editor animations.
@@ -191,8 +193,8 @@ It is interesting to note here that this is not a problem when creating sequence
 
 
 
-Motif names and linking
-----------------------------
+Motif names and linking (keep multiple strips in sync)
+------------------------------------------------------------
 
 .. figure:: ../source/_static/motif_name_linking.png
    :align: center
