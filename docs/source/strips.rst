@@ -75,7 +75,22 @@ How to do performance capture
 -------------------------------
 Film a video of yourself pointing a laser pointer around a flat vertical surface in an expressive way, perhaps to music like Hans Zimmer’s “S.T.A.Y.”. Pretend like you are a living, breathing moving light that has feelings. Put those feelings into the movement of the laser pointer. Then, load the footage into Blender’s motion tracking area. Then, use common Blender tutorials to help you track the laser pointer light to an “empty”. Then, use an animation strip to constrain a mover to the “empty”. Finally, once it seems right, use the animation strip to create a qmeo so the console can remember how to play it back without Sorcerer. 
 
-Note: we realize this doesn't help much. When we have the time, we will make this section much more helpful. It's difficult to explain some of the more advanced features in writing.
+While we don't yet have a detailed, step by step tutorial for this, here are some notes from the proof-of-concept project that successfully demonstrated this technology:
+
+1. Use object tracking, not camera tracking.
+
+2. Blender will yell at you if you try to track just the one empty, so place at least 7 other trackers on stationary objects. This will lead to absurdly high solve error, but that's okay because we are only tracking a single point in space, not an  object.
+
+3. Try to film with the quickest shutter speed possible to minimize "light painting" distortion when the laser pointer moves faster. 
+
+4. If you accidentally filmed upside down, you have to either put up with it or render a new one with the sequencer. The movie clip editor cannot rotate the clip as far as we know.
+
+5. If you get it mostly working (that is, the motion tracker is translating its data to pan/tilt on the console), but the movement is super small on the fixture and you'd like it to be more exaggerated, you need to go to the light's Track To modifier and hit Constrain to F-Curves. This will take a couple seconds to complete, depending on the length of the sequence. Once finished, you can see all the kyframes in the graph editor and resize them as needed with G for grab and Y for constrain to Y axis. Be careful not to scale it up so much that you run into pan-around on the mover's gimbal.
+
+6. Refer to the many general Blender tutorials available on YouTube for more step-by-step specifics on how to do the basic motion tracking component.
+
+7. The initial tech demonstration test was done under suboptimal working conditions with suboptimal tools. This resulted in nonviable artistic output. However, the demonstration successfully validated the performance capture technology for theatrical light design using publicly available software. While the results of the tech demonstration are not artistically viable, future implementations with better tools and working conditions are expected to yield higher quality results.
+
 
 
 Strip formatter
