@@ -73,8 +73,8 @@ Use animation strips to make people feel sorry for lighting fixtures. Use them t
 Note: we realize this doesn't actually help much. When we have the time, we will make this section much more helpful. It's difficult to explain some of the more advanced features in writing.
 
   
-Performance capture (make people cry because a moving light seems sad)
--------------------------------
+Performance capture (make a moving light seem like it is alive and has feelings)
+---------------------------------------------------------------------------------------
 Film a video of yourself pointing a laser pointer around a flat vertical surface in an expressive way, perhaps to music like Hans Zimmer’s “S.T.A.Y.”. Pretend like you are a living, breathing moving light that has feelings. Put those feelings into the movement of the laser pointer. Then, load the footage into Blender’s motion tracking area. Then, use common Blender tutorials to help you track the laser pointer light to an “empty”. Then, use an animation strip to constrain a mover to the “empty”. Finally, once it seems right, use the animation strip to create a qmeo so the console can remember how to play it back without Sorcerer. 
 
 While we don't yet have a detailed, step by step tutorial for this, here are some notes from the proof-of-concept project that successfully demonstrated this technology:
