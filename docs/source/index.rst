@@ -27,4 +27,4 @@ This manual will focus on how to help you do more cool stuff. This documentation
    others
    glossary
 
-The expectation for this software is for it to be the very best product it can possibly be.
+The expectation for this software is that it is the very best product it can possibly be. It obviously cannot be the best it can possibly be, so all available effort is being spent making it the very best it can possibly be.
