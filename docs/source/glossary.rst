@@ -26,9 +26,9 @@ Noticeably absent from this list is the term “lighting pro****mer”. Pro****m
 
 **Safety-rated software:** “*The software is reliable and safe enough to directly control systems that can physically hurt humans under predictable circumstances that are not otherwise regulated by the government.*” No Alva Theaters software is Safety-rated.
 
-**Alva Theaters core mission:** "*To build magical machines to make people happy.*"
-
 **Anti-Reduction Policy:** Alva Theaters will make no effort to actively remove features from the fee-less versions of paid software for financial reasons. The fee-less versions shall be constructed using components taken from fee versions, but the usefulness of such parts shall not be reduced for financial purposes. Components dependent on parts not to be added shall be removed, but no currently functional part shall be dismantled in any software version for the purpose of prompting a sale. All Alva Theaters products are expected to be of the highest possible quality, regardless of fee status. Financial motives shall only additively build software. Financial motives shall not dismantle amazing technology.  
+
+**Alva Theaters core mission:** "*To build magical machines to make people happy.*"
 
 .. figure:: ../source/_static/alva_theaters_transparent.png
    :align: center
