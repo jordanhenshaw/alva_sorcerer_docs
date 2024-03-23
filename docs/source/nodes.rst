@@ -11,7 +11,7 @@ If you have music, you can tell any of the pokey things to be anywhere at any ti
    :width: 700px
 
 
-Group controller nodes (one UI element always controls one group)
+Group controller nodes (control one group per node)
 ---------------------------------
 .. figure:: ../source/_static/group_controller_node.png
    :align: center
@@ -31,14 +31,14 @@ Because many parameter templates do not vary from fixture to fixture (intensity 
 All of the following node types can be accessed from Shift + A, the Add menu at the top, or by right-clicking. While Sorcerer does offer a customized node editor area where only Sorcerer nodes can be added (to exclude irrelevant modelling/shading/compositing nodes), group nodes are not compatible in that space. If you are not planning to use group nodes, the Sorcerer Nodes view may be best.
 
 
-Group driver nodes (one UI element always controls one group of groups)
+Group driver nodes (control multiple groups per node)
 ----------------------------------------
 These nodes are like group controller nodes but are less compact. They control multiple group controller nodes at the same time. This allows the user to create elaborate hierarchies of nodes. A Group Driver node output socket, in the upper right-hand corner, can be connected to many group controller nodes. Operating the driver will operate all downstream group nodes the same way. A group controller’s input Driver Input node however can only connect to a single node upstream (this seems to be a Blender limitation). For this reason, multiple input sockets are provided at various points throughout the UI.
 
 These nodes, in addition to the mixer driver nodes, do not have group targets in the top left corner since their targets are defined instead by sockets and noodles.
 
 
-Master nodes (one UI element always controls one group hidden inside a group node)
+Master nodes (control collapsed, hidden nodes)
 ----------------------------------
 These nodes are like group driver nodes, but drive the driver nodes, not group controller nodes. You should never attempt to connect a white Master Node socket to a socket of any color, like the pink Group Controller sockets and the purple Mixer Node sockets. It will connect, but the color of the noodle (the curvy line connecting sockets between nodes) will fade between the colors across its length. Within the context of Sorcerer nodes. seeing this color mixing effect on a noodle means there is an invalid connection. It may draw an error message. 
 
@@ -47,7 +47,7 @@ Master nodes are primarily intended to be used to remotely access collapsed grou
 Group nodes is a group of nodes that can act as a completely different world. You create groups with the right click menu. (Note: this only works in the Shader Editor, not in the Sorcerer Nodes view.) Once you have created a node group, Blender automatically tabs you into the node group’s world. You can use the two green nodes on the right and left hand side to connect to white sockets within the group node world. (Note: Currently, only connect to the white sockets, not sockets of any other color.) Once noodles have been drawn between the group input node sockets and white sockets on controllers you wish to control from the outside (you can label and reorder these on the N tab to the right, at the top), hit the tab key to exit the node group. Then, connect Master Node outputs to the green node group node’s white sockets. Then, remote-control the hidden nodes with the Master Node.
 
 Flash nodes (build really complicated but visually simple effects)
---------------------------------------
+--------------------------------------------------------------------
 
 Here is an example of a potential flash node setup being used for lighting choreography. This type of setup allows you to rapidly change parameters inside increasingly complex sequences without getting confused by complicated computer lingo and spreadsheets. Use color coding, noodles, and visual organization to stay on track of what settings are where. Note: to make the noodles do the fancy arrow thing, hold down Shift, right click, and drag over multiple noodles. To move an anchor point, click and and hit G to grab.
 
