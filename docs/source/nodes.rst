@@ -12,7 +12,7 @@ If you have music, you can tell any of the pokey things to be anywhere at any ti
 
 
 Group controller nodes (control one group per node)
----------------------------------
+-----------------------------------------------------
 .. figure:: ../source/_static/group_controller_node.png
    :align: center
    :alt: Group Controller Node
@@ -32,14 +32,14 @@ All of the following node types can be accessed from Shift + A, the Add menu at 
 
 
 Group driver nodes (control multiple groups per node)
-----------------------------------------
+--------------------------------------------------------
 These nodes are like group controller nodes but are less compact. They control multiple group controller nodes at the same time. This allows the user to create elaborate hierarchies of nodes. A Group Driver node output socket, in the upper right-hand corner, can be connected to many group controller nodes. Operating the driver will operate all downstream group nodes the same way. A group controller’s input Driver Input node however can only connect to a single node upstream (this seems to be a Blender limitation). For this reason, multiple input sockets are provided at various points throughout the UI.
 
 These nodes, in addition to the mixer driver nodes, do not have group targets in the top left corner since their targets are defined instead by sockets and noodles.
 
 
 Master nodes (control collapsed, hidden nodes)
-----------------------------------
+-------------------------------------------------
 These nodes are like group driver nodes, but drive the driver nodes, not group controller nodes. You should never attempt to connect a white Master Node socket to a socket of any color, like the pink Group Controller sockets and the purple Mixer Node sockets. It will connect, but the color of the noodle (the curvy line connecting sockets between nodes) will fade between the colors across its length. Within the context of Sorcerer nodes. seeing this color mixing effect on a noodle means there is an invalid connection. It may draw an error message. 
 
 Master nodes are primarily intended to be used to remotely access collapsed group driver nodes hidden away inside group nodes. 
@@ -67,7 +67,7 @@ Here is what it looks like when you "tab into" the green "group node":
 
 
 Mixer nodes (mix multiple choices across a group's channels)
----------------------------------------
+-----------------------------------------------------------------
 .. figure:: ../source/_static/mixer_nodes.png
    :align: left
    :alt: Mixer Node
@@ -76,12 +76,12 @@ These nodes can be used to mix two or three different parameter choices across a
 
 
 Mixer driver nodes (control multiple mixers at the same time)
---------------------------------------------
+-----------------------------------------------------------------
 These nodes work exactly the same way group driver nodes do, only they do not currently have master input sockets, so they cannot be accessed remotely when collapsed inside a group node. These nodes, in addition to the group driver nodes, do not have group targets in the top left corner since their targets are defined instead by sockets and noodles. 
 
 
 Group data system (edit what channels are in what groups)
------------------------------------------------
+------------------------------------------------------------
 .. figure:: ../source/_static/group_data.png
    :align: center
    :alt: Group Data Area
@@ -92,7 +92,7 @@ Another way to create these groups is the USITT ASCII import system, accessible 
 
 
 Single-parameter nodes (control all of one parameter type for each group in one area)
------------------------------------------------
+-------------------------------------------------------------------------------------
 .. figure:: ../source/_static/singles_nodes.png
    :align: center
    :alt: Singles Nodes
@@ -101,7 +101,7 @@ These nodes provide instant access to the specified parameter of all group contr
 
 
 Renderer nodes/Qmeo nodes (save an animation in a format the console can play by itself)
-------------------------------------------------
+--------------------------------------------------------------------------------------------
 .. figure:: ../source/_static/qmeo_node.png
    :align: center
    :alt: Qmeo Node
@@ -119,7 +119,7 @@ To use these nodes, simply follow the tooltips. The correct syntax for ETC Eos i
 
 
 Console buttons nodes (make a virtual console in the node editor)
-------------------------------------------------------------
+------------------------------------------------------------------
 .. figure:: ../source/_static/console_buttons_node.png
    :align: center
    :alt: Console Buttons Node
@@ -129,7 +129,7 @@ If the Console Buttons node is so confusing that it requires reading the documen
 
 
 Presets nodes: (rapidly record and fire color-coded presets)
-------------------------------------------
+---------------------------------------------------------------
 .. figure:: ../source/_static/presets_node.png
    :align: center
    :alt: Presets Node
@@ -141,7 +141,7 @@ Enter record mode by pressing the white dots to the left. Currently, record mode
 
 
 Pan/Tilt nodes: (super-intuitively control position of FOH-hung spot movers)
------------------------------------------
+-------------------------------------------------------------------------------
 .. figure:: ../source/_static/pan_tilt_normal.png
    :align: center
    :alt: Pan Tilt Normal
@@ -175,7 +175,7 @@ In the future, these nodes will include an enumerator (drop-down) to change betw
 
 
 Nodes toolbar buttons (quickly reach common console functions)
------------------------------------------------
+----------------------------------------------------------------
 Most of these buttons currently only work ETC Eos. This should soon change to use templates defined in settings instead of the hardcoded messages.
 
 
