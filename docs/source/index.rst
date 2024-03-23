@@ -14,7 +14,7 @@ Alva Sorcerer Documentation Objectives:
 ----------------------------------------
 The Alva Sorcerer Manual is not about lecturing you on how Sorcerer works. That's boring. We try our best to design the software to be intuitive enough that you don't need to read the manual to be happy with the software. If you contact us at thisisdumb@alvatheaters.com about a dumb part of the UI, that tells us what parts are the most dumb that need the most improvement. We're not going to solve those problems with better documentation, we're going to solve those problems by making the software less dumb. In fact, the phrase, "RTDM" is banned at Alva Theaters. It is the software's job to make the manual pointless. Have you ever had to read the software documentation for your phone? If you did, would you be happy with your phone? We believe Sorcerer can be and should be smart enough that it just does exactly what you expect it to do—because it could not possibly be any more simple. Remember: Sorcerer is designed for artists, not technicians.
 
-This manual will focus on how to make exciting things happen quicker. This documentation is here to help you:
+This manual is here to make exciting things happen quicker. This documentation is here to help you:
 
 .. toctree::
 
