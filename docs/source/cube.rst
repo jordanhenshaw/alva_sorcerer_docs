@@ -19,7 +19,7 @@ To activate a mesh object as an influencer, select it and make the button in the
 
 Note: Currently, influencers can only influence intensity. Also, they cannot yet do fade up or fade down. We're working on it.
 
-Channel controllers
+Channel controllers (access ML editor from popup in 3D view)
 ------------------------------
 Select any light in 3D view (represented by cones) and hit "P" to open a popup controller to control its individual properties. This also works for influencers. You can select multiple cones and edit them at the same time, but only with the popup channel controller, not the side panel channel controller.
 
