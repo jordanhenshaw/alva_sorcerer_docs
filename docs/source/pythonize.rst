@@ -21,42 +21,30 @@ The *press_lighting_key(key_as_string)* function simulates pressing a key on the
 
 **Example Implementations:**
 
-import bpy
+::
 
-from bpy import spy
+    import bpy
+    from bpy import spy
+    import time
 
-import time
-
-
-Just for fun:
-
-spy.osc.lighting_command("3")
-
-time.sleep(1)
-
-spy.osc.lighting_command("2")
-
-time.sleep(1)
-
-spy.osc.lighting_command("1")
-
-time.sleep(1)
-
-spy.osc.lighting_command("Boom!") # Just a fun little demo
-
-
+    # Just for fun:
+    spy.osc.lighting_command("3")
+    time.sleep(1)
+    spy.osc.lighting_command("2")
+    time.sleep(1)
+    spy.osc.lighting_command("1")
+    time.sleep(1)
+    spy.osc.lighting_command("Boom!") # Just a fun little demo
 
 **Edit a macro**
 
-spy.osc.lighting_key_down("Macro")
+::
 
-spy.osc.lighting_key_down("Macro")
-
-spy.osc.lighting_key_up("Macro")
-
-time.sleep(.3)
-
-spy.osc.press_lighting_key("softkey_6") # Start editing the top macro
+    spy.osc.lighting_key_down("Macro")
+    spy.osc.lighting_key_down("Macro")
+    spy.osc.lighting_key_up("Macro")
+    time.sleep(.3)
+    spy.osc.press_lighting_key("softkey_6") # Start editing the top macro
 
 
 The *send_osc_video(address, argument)* function sends an OSC message to control the video switcher. You pass it an address and an argument, and it doesn’t return anything. The *send_osc_audio(address, argument)* function sends an OSC message to control the audio mixer. You pass it an address and an argument, and it doesn’t return anything. The *send_osc_string(osc_address, destination_ip_address, destination_udp_port, string_to_send)* function sends a OSC message to a custom destination, or to a place not defined within Sorcerer's settings. You pass it an OSC address, an address, a port, and a string, and it doesn’t return anything.
