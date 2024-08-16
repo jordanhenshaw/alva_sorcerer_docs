@@ -25,4 +25,5 @@ This manual is here to make exciting things happen faster. This documentation is
    strips
    school_mode
    others
+   pythonize
    glossary
