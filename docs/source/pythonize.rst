@@ -1,4 +1,4 @@
-API Reference (from bpy import spy)
+Use Python directly on Eos with absolutely no setup
 =============================================================
 
 Sorcerer now features an API targeted at the end user. It's called spy, short for SorcererPython. With absolutely zero setup, nontechnical users can commandeer the lighting console from Blender's text editor. 
