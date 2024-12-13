@@ -6,7 +6,7 @@
 Hello there, human!
 ===================================
 
-**Alva Sorcerer** is a Blender add-on that brings mature 3D animation tools to lighting and sound design for stages. Unlike traditional stage technology, animation tools focus on fine emotional expression rather than on versatility and live control. Sorcerer is for the lighting designer and spatial audio designer in live performance looking for effortless subtlety.
+**Alva Sorcerer** is a Blender add-on that brings mature 3D animation tools to lighting and sound design for stages. Unlike traditional stage technology, animation tools focus on fine emotional expression rather than on versatility and live control. Sorcerer is for the lighting designer and spatial audio designer in live performance looking for effortless subtlety in timecoded sequences.
 
 
 Documentation Objectives:
