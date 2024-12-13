@@ -11,7 +11,7 @@ Hello there, human!
 
 Documentation Objectives:
 ----------------------------------------
-This manual is here to make exciting things happen faster. This documentation is here to help you:
+This manual is here to make exciting things happen faster, to help you:
 
 .. toctree::
 
