@@ -32,6 +32,11 @@ How do I make a fly-out effect?
 ---------------------------------------------------
 A complex, custom fly-out effect can be achieved in 26 seconds once Sorcerer is connected to a console with a mover patched. 
 
+.. figure:: ../source/_static/SorcererFlyOut.png
+   :align: center
+   :alt: Sorcerer
+   :width: 500px
+
 1. Enable auto-keying mode.
 2. Press "I" while hovering over Intensity, then while over Tilt, and then while over Zoom.
 3. Step forward to frame 20.
